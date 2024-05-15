@@ -13,7 +13,7 @@ def main():
             while line:
                 GenToken(line, output_file)
                 line = input_file.readline()
-        print("\033[1;32m", "LEXEME ACCEPTED!", "\033[0m")
+        #print("\033[1;32m", "LEXEME ACCEPTED!", "\033[0m")
         input_file.close()
     print("\033[1;32m", "LEXER DONE SUCCESSFULLY!", "\033[0m", "\n")
 
