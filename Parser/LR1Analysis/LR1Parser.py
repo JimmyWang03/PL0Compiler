@@ -364,7 +364,7 @@ class LR1Parser:
     def process_token(self, param, token_, logger_):
         cmd = str(self.parse_table[self.state_stack[-1]][param])
         if cmd == 'acc':
-            print("\033[1;32m", "SYNTAX ACCEPTED!", "\033[0m")
+            #print("\033[1;32m", "SYNTAX ACCEPTED!", "\033[0m")
             return True
         if not cmd:
             print("\033[0;31m", "ERROR:  ", token_, "  ", cmd, "\033[0m")
